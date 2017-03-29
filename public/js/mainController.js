@@ -1,12 +1,11 @@
 angular.module('quoteBook').controller('mainController', function ($scope, mainService) {
 
-    $scope.quotes = mainService.getQuotes();
+    mainService.getQuotes().then(result => {
 
-    $scope.deleteMe = function (item) {
+        $scope.quotes = result.data;
 
-        mainService.deleteQuote(item);
+    });
 
-    }
     $scope.addQuote = function() {
 
         mainService.addQuote($scope.a, $scope.b);

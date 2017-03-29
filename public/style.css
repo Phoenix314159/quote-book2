@@ -1,0 +1,16 @@
+.main{
+    margin-left: 18%;
+    margin-top:12%;
+    font-size: 30px;
+}
+.box{
+    position: absolute;
+    top:1%;
+    left:40%;
+
+}
+.box button{
+    position: absolute;
+    left:30%;
+    top:105%
+}
